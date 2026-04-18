@@ -47,10 +47,42 @@
     color: var(--color3);
 }
 
+#nosotros{
+    background-color: var(--color4);
+    color: var(--color3);
+}
+
+#mision{
+    background-color: var(--color4);
+    color: var(--color3);
+}
+
+#productos{
+    background-color: var(--color5);
+    color: var(--color4);
+}
+
+#novedades{
+    background-color: var(--color4);
+}
+
 #footer {
     background-color: var(--color7);
     color: var(--color8);
 }
+
+#productos img, #novedades img{
+    max-width: 200px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+/* ESPACIO DEBAJO DEL ELEMENTO H3 */
+#productos h3, #novedades h3{
+    margin-bottom: 10px;
+}
+
+
 
 
 /* ------------------------------------ */
@@ -88,20 +120,34 @@ p {
     padding-bottom: 90px;
 }
 
+.padding-section{
+    padding-bottom: 40px;
+}
+
 /* Ajustar ancho del contenedor en pantalla */
 .container {
     max-width: 70%;
     margin: auto;
 }
 
+/* CAMBIO DE COLOR SOLO CHEESECAKE */
+.intercalado{
+    background-color: var(--color4);
+    color: var(--color3);
+}
 
 .img-fluid {
     width: 100%;
     height: auto;
 }
 
+
+
 /* Tamaño del logo */
 .nav-logo {
     width: 150px;
     height: auto;
 }
+
+
+
