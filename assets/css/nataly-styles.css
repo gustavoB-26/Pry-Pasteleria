@@ -1,0 +1,159 @@
+/* Se puede cambiar lo que esta dentro del root */
+:root {
+    /* Paleta de colores */
+    --color1: #1e1414; /* Color de fondo del top-bar */
+    --color2: #C8D4E2; /* Color de texto del top_bar */
+    --color3: #545a5b; /* Color de parrafo */
+    --color4: #FFFFFF; /* Color blanco */
+    --color5: #b40818; /* Color primario */
+    --color6: #282828; /* Color de subtitulos */
+    --color7: #171d25; /* Color del footer-bg */
+    --color8: #bbbbb9; /* Color del texto del footer */
+    --color9: #FFFFFF; /* Color de links en el footer */
+
+    /* Tipografias */
+    --fuente1: "Manrope", sans-serif;
+
+    /* Interlineados */
+    --spacing1: 1.6;
+
+}
+
+/* ------------------------------------ */
+/* Selector universal de elementos */
+/* ------------------------------------ */
+*{
+    /* Elimina espacios predeterminados */
+    margin: 0;
+    padding: 0;
+
+    /* Evita que un contenedor cambie de tamaño al agregar espacios*/
+
+    box-sizing: border-box;
+}
+
+
+/* Escojo que color usar de los que guarde con var() */
+/* ------------------------------------ */
+/* Selectores tipo ID */
+/* ------------------------------------ */
+#header {
+    background-color: var(--color4);
+    color: var(--color3);
+}
+
+#vision {
+    background-color: var(--color4);
+    color: var(--color3);
+}
+
+#promocion {
+    background-color: var(--color4);
+    color: var(--color3);
+    margin-top: 50px;
+}
+
+
+#footer {
+    background-color: var(--color7);
+    color: var(--color8);
+}
+
+
+/* ------------------------------------ */
+/* Selectores tipo etiqueta */
+/* ------------------------------------ */
+body {
+    font-family: var(--fuente1);
+    line-height: var(--spacing1);
+}
+
+/* Elimina los espacios que aparecen debajo del objeto */
+img, video {
+    display: block;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+
+/* ------------------------------------ */
+/* Selectores tipo class */
+/* ------------------------------------ */
+
+/* Padding extra pequeño */
+.padding-xs {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* Padding extra grande */
+.padding-xl {
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+/* Ajustar ancho del contenedor en pantalla */
+.container {
+    max-width: 70%;
+    margin: auto;
+}
+
+
+.img-fluid {
+    width: 100%;
+    height: auto;
+}
+
+/* Tamaño del logo */
+.nav-logo {
+    width: 150px;
+    height: auto;
+}
+
+/* Responsive para videos */
+.video-fluid {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+}
+
+/* Formatos de tabla */
+.tbl-promocion {
+    width: 100%;
+    margin-bottom: 60px;
+
+}
+
+.tbl-promocion th {
+    background-color: var(--color3);
+    color: var(--color2);
+    border: 1px solid var(--color8);
+    padding: 10px;
+}
+
+.tbl-promocion td {
+    border: 1px solid var(--color8);
+    padding: 10px;
+
+}
+
+.tbl-contacto {
+    width: 100%;
+    height: auto;
+    margin-bottom: 50px;
+}
+
+.tbl-contacto th {
+    background-color: var(--color3);
+    color: var(--color2);
+    border: 1px solid var(--color8);
+    padding: 10px;
+}
+
+.tbl-contacto td {
+    border: 1px solid var(--color8);
+    padding: 10px;
+}
